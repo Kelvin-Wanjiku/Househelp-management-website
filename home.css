@@ -20,7 +20,7 @@ body{
   position: fixed;
   width: 200px;
   height: 100%;
-  background: rgb(38, 198, 35);
+  background: rgb(81, 15, 187);
   padding: 30px 0;
 
 }
@@ -34,4 +34,40 @@ body{
   padding: 15px;
   border-bottom: 1px solid;
   border-top:1px solid floralwhite ;
+}
+.sidebar ul li a{
+  color: blanchedalmond;
+  display: block;
+}
+.sidebar ul li .fa{
+  width: 25px;
+
+}
+.sidebar ul li:hover a{
+color: burlywood;
+}
+
+.wrapper .sidebar .sign-up{
+        position: fixed;
+        list-style: none;
+        bottom: 80px;
+        left:0;
+        width: 200px;
+        height: 120px;
+        background-color: rgb(81, 15, 187);
+        border: 1px solid #ccc;
+        padding: 20px;
+       color: darkorange;
+       text-align: center;
+
+}
+.wrapper .main-content{
+  width: 100%;
+  margin-left: 200px;
+}
+.wrapper .main-content .header{
+  padding: 20px;
+  background: #f3F5F9;
+  color: chocolate;
+  border-bottom: 1px solid;
 }
