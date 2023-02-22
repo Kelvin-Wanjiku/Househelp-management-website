@@ -49,13 +49,13 @@ color: burlywood;
 
 .wrapper .sidebar .sign-up{
         position: fixed;
-        list-style: none;
-        bottom: 80px;
+        
+        bottom: 8px;
         left:0;
         width: 200px;
         height: 120px;
         background-color: rgb(81, 15, 187);
-        border: 1px solid #ccc;
+        
         padding: 20px;
        color: darkorange;
        text-align: center;
@@ -68,6 +68,12 @@ color: burlywood;
 .wrapper .main-content .header{
   padding: 20px;
   background: #f3F5F9;
-  color: chocolate;
+  color: rgb(111, 114, 15);
   border-bottom: 1px solid;
+}
+
+.info{
+  display: block;
+  padding: 10px;
+  background-color: beige;
 }
