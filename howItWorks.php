@@ -1,3 +1,4 @@
+<?php>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +15,22 @@
          <h2> <i class="fa-solid fa-bars"></i>MENU </h2>
          <br> <br>
          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./OurMaids.html"><i class="fa-thin fa-magnifying-glass"></i>Our maids</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="./OurMaids.php"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
             
-            <li><a href="./OurServices.html"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
+            <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
-            <li><a href="./howItWorks.html"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
-            <li><a href="#"><i class="fa-regular fa-comments"></i>Feedback</a></li>
+            <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
+            <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
             <li> <a href="#">Rate Us</a></li>
+            <br>
             <div class="reachOut">
                <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
                <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 
               </div>
             <div class="sign-up">
                <ul>
+               <li><a href="logout.php"><i class="fa-duotone fa-right-to-bracket"></i>Logout</a></li>
                   <li><a href="#"><i class="fa-duotone fa-right-to-bracket"></i>Login</a></li>
                   <li><a href="#"><i class="fa-light fa-user-plus"></i>Sign up</a></li>
                </ul>

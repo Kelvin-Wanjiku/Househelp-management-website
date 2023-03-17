@@ -1,3 +1,4 @@
+<?php>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,31 +16,34 @@
          <h2> <i class="fa-solid fa-bars"></i>MENU </h2>
          <br> <br>
          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./OurMaids.html"><i class="fa-thin fa-magnifying-glass"></i>Our maids</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="./OurMaids.php"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
             
-            <li><a href="./OurServices.html"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
+            <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
-            <li><a href="./howItWorks.html"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
-            <li><a href="#"><i class="fa-regular fa-comments"></i>Feedback</a></li>
+            <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
+            <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
             <li> <a href="#">Rate Us</a></li> 
          </ul>
+         <br>
          <div class="reachOut">
             <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
             <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 
            </div>
-           
+
             <div class="sign-up">
                <ul>
-                  <li><a href="#"><i class="fa-duotone fa-right-to-bracket"></i>Login</a></li>
-                  <li><a href="#"><i class="fa-light fa-user-plus"></i>Sign up</a></li>
+               <li><a href="logout.php"><i class="fa-duotone fa-right-to-bracket"></i>Logout</a></li>
+                  <li><a href="#login.php"><i class="fa-duotone fa-right-to-bracket"></i>Login</a></li>
+                  <li><a href="registration.php"><i class="fa-light fa-user-plus"></i>Sign up</a></li>
                </ul>
             </div>
             
          </ul>
       </div>
       <div class="main-content">
-         <div class="header"><h2>Homly website</h2><p><i> your one-stop solution for finding reliable and trustworthy househelp services.</i></p>   </div>
+         <div class="header"><h2>Homly website</h2><p><i> your one-stop solution for finding reliable and trustworthy househelp services.</i></p>
+            </div>
          <div class="info">
             Welcome to Homly Househelp website, your one-stop solution for finding reliable and trustworthy househelp services.<br>
             We understand how busy life can get, and how difficult it can be to juggle work, family, and household chores all at once.
