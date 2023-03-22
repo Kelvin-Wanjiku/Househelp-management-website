@@ -34,6 +34,45 @@ if(isset($_POST["login"])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>login</title>
+   <style>
+     form {
+        background-color: #fff;
+        width: 300px;
+        padding: 20px;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+   .login {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .login:hover {
+        background-color: red;
+    }
+    
+    
+   </style>
 </head>
 <body>
    <form method="post" action="" name="loginForm">
@@ -43,9 +82,10 @@ if(isset($_POST["login"])){
    <label for="password"> password:</label>
    <input type="password" id="password" name="password" required><br><br>
 
-   <button type="login" name= "login" value="login"> Login</button>
+   <button class="login" name= "login" value="login"> Login</button> <br><br>
    
-   </form>
    <a href="registration.php"> Register </a>
+   </form>
+   
 </body>
 </html>

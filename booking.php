@@ -14,8 +14,9 @@
       $query = "INSERT INTO booking VALUES ('$worker_id', '$client_id', 0)";
       mysqli_query($conn, $query); 
       echo
-      "<script> alert('Successfully made the booking'); </script>";
+      "<script> alert('Successfully made the booking! We will reach out via email to seal the hiring.'); </script>";
+      header("Location: OurMaids.php");
    }
 
-   // header("Location: OurMaids.php");
+   header("Location: OurMaids.php");
 ?>

@@ -77,3 +77,12 @@ color: burlywood;
   padding: 10px;
   background-color: beige;
 }
+.btn-1{
+  background-color: blueviolet;
+  font-size: 24px;
+  display: block; 
+  margin: 0 auto; 
+  color: black;
+  width: 500px;
+  height: 80px;
+}

@@ -1,16 +1,16 @@
 <?php 
    require 'config.php';
-
-   $email = $_SESSION["email"];
-   // $query = "SELECT services FROM client WHERE email = '$email'";
-   $query = "SELECT services FROM client WHERE email = '$email'";
-   $service_query = mysqli_query($conn, $query);
-   while($row = mysqli_fetch_array($service_query)){
-      $service = $row[0];
-   };
+      $email = $_SESSION["email"];
+      $query = "SELECT services FROM client WHERE email = '$email'";
+      $query = "SELECT services FROM client WHERE email = '$email'";
+      $services_query = mysqli_query($conn, $query);
+      while($row = mysqli_fetch_array($services_query)){
+         $services = $row[0];
+      };
       
-   $query = "SELECT * FROM worker WHERE  skills = '$service'";
-   $results = mysqli_query($conn, $query);
+      $query = "SELECT * FROM worker WHERE  skills = '$services' ";
+      $results = mysqli_query($conn, $query);
+   
 
 ?>
 <!DOCTYPE html>
@@ -37,7 +37,7 @@
             <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
            
             <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
-            <li> <a href="#">Rate Us</a></li>
+            <li> <a href="rate.php">Rate Us</a></li>
          </ul>
          <br>
          <div class="reachOut">
@@ -49,6 +49,7 @@
                <li><a href="logout.php"><i class="fa-duotone fa-right-to-bracket"></i>Logout</a></li>
                   <li><a href="login.php"><i class="fa-duotone fa-right-to-bracket"></i>Login</a></li>
                   <li><a href="registration.php"><i class="fa-light fa-user-plus"></i>Sign up</a></li>
+                  
                </ul>
             </div>
             

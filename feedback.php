@@ -34,6 +34,64 @@ if(isset($_POST["submit"])){
    <title>HOME</title>
    <link rel="stylesheet" href="./home.css">
    <script src="https://kit.fontawesome.com/3f3b37584c.js" crossorigin="anonymous"></script>
+   <style>
+    form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+h1{
+    text-align: center; 
+}
+p{
+    text-align: center;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+   </style>
 </head>
 <body>
    <div class="wrapper">
@@ -49,9 +107,8 @@ if(isset($_POST["submit"])){
             <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             <li><a href="feedback.php"><i class="fa-solid fa-circle-question"></i>Feedback</a></li>
             
-            <li><a href="#"><i class="fa-regular fa-commentcontent</a></li>
-            <li> <a href="#">Rate Us</a></li>
-         <br>
+            <li><a href="rate.php"> Rate Us</a></li>
+         
          <div class="reachOut">
           <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
           <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 

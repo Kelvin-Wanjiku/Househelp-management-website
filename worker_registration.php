@@ -51,7 +51,69 @@ if(isset($_POST["submit"])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>worker registration</title>
+   <style>
+    h2{
+        text-align: center;
+    }
+    form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="phoneNo"],
+input[type="experience"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+</style>
 </head>
 <body>
 <h2>Worker Registration Form</h2>
@@ -86,7 +148,7 @@ if(isset($_POST["submit"])){
    <label for="location">location:</label>
    <input type="text" id="location" name="location" required><br><br>
 
-   <label for="experience">experience:</label>
+   <label for="experience">experience:(years)</label>
    <input type="experience" id="experience" name="experience" required><br><br>
 
    <label for="password">Password:</label>

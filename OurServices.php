@@ -1,4 +1,4 @@
-<?php>
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@
 
             <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
-            <li> <a href="#">Rate Us</a></li> 
+            <li> <a href="rate.php">Rate Us</a></li> 
          </ul>
          <br>
          <div class="reachOut">
@@ -54,34 +54,35 @@
          </div>
          <br> <br>
          <div class="nannies">
-            <div class="nannyImage"><img src="./nanny.jpeg" alt="nanny image">
+            <div class="nannyImage"> <img src="./nanny.jpeg" alt="nanny image">
             </div>
            
-           <div class="nanny-content">
-            <h2><b>Nannies</b></h2>
+            <div class="nanny-content">
+             <h2><b>Nannies</b></h2>
              <p> Homly website provides you with qualified and experienced nannies countrywide. 
-            Our nannies...</p> </div>
-          </div>
+              Our nannies...</p>
+             </div>
+         </div>
 
          <div class="Househelps">
-            <div class="nannyImage"><img src="./househelp.jpg" alt="nanny image">
+            <div class="nannyImage"> <img src="./househelp.jpg" alt="nanny image">
             </div>
            
-           <div class="househelp-content">
-            <h2><b>Househelps</b></h2>
-            <p>Our househelps are experienced on matters house chores and offer the best services at professional levels</p>
-           </div>
+            <div class="househelp-content">
+             <h2><b>Househelps</b></h2>
+             <p>Our househelps are experienced on matters house chores and offer the best services at professional levels</p>
+            </div>
          </div>
 
          <div class="Caregivers">
             <div class="nannyImage"><img src="./caregiver.jpeg" alt="nanny image">
             </div>
            
-           <div class="caregiver-content">
-            <h2><b>Caregivers</b></h2>
-            <p>Having elderly people and wondering who to leave them with when attending your daily duties?
+            <div class="caregiver-content">
+               <h2><b>Caregivers</b></h2>
+               <p>Having elderly people and wondering who to leave them with when attending your daily duties?
                 Homly website gives you a solution by providing you with caregivers who are experienced and caring....</p>
-           </div>
+            </div>
          </div>
       </div>
    </div>
