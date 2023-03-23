@@ -49,7 +49,12 @@ if(isset($_POST["submit"])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Client registration</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
    <style>
     h2{
         text-align: center;
@@ -115,7 +120,7 @@ button[type="reset"]:hover {
 <body>
 <h2>Client Registration Form</h2>
 
-<form method="post" action="" name="registrationForm">
+<form method="post" action="" name="registrationForm" onsubmit="return validateForm()">
    
    <label for="firstName">First Name:</label>
    <input type="text" id="firstName" name="firstName" required><br><br>
@@ -159,10 +164,85 @@ button[type="reset"]:hover {
    <label for="location">location:</label>
    <input type="text" id="location" name="location" required><br><br>
 
+   
 
-   <button type="submit" name= "submit" value="Submit"> Submit</button>
+   <button type="submit" class="btn btn-primary" name= "submit" value="Submit" onclick="showTerms()"> Submit</button>
    <button type="reset" name="reset" value="Reset"> Reset </button>
 
 </form>
+<div class="modal" id="termsModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Terms and Conditions</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your terms and conditions here -->
+        <p> 
+          <b>TERMS & CONDITIONS</b>
+          This is to let you know that <i>Homly website</i> adheres to the laws under the labour act accordin to our constitution
+          Also the following laws must be followed:
+          <ol>
+            <li>In case of a househelp's report of violation or abuse, investigation will be carried out and lawful actions taken</li>
+            <li></li>
+            <li></li>
+          </ol>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <!-- Add this code to your form to include a checkbox for terms and conditions -->
+      <input type="checkbox" id="terms-checkbox" name="terms-checkbox">
+      <label for="terms-checkbox">I agree to the terms and conditions</label>
+      <button type="submit" class="btn btn-secondary"onclick="validateForm()"> Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function validateForm() {
+  // check if all fields are filled
+  if (document.getElementById("name").value == "" || document.getElementById("email").value == "") {
+    alert("Please fill out all fields.");
+    return false;
+  }
+
+  
+}
+function showTerms() {
+  $('#termsModal').modal('show');
+}
+
+function validateForm() {
+  // Check if all fields have been filled
+  if (document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("message").value == "") {
+    alert("Please fill in all fields.");
+    return false;
+  }
+
+  // Check if the terms and conditions have been ticked
+  if (!document.getElementById("terms-checkbox").checked) {
+    alert("Please tick the terms and conditions.");
+    return false;
+  }
+
+  // If all conditions are met, submit the form
+  document.getElementById("contact-form").submit();
+}
+
+const form = document.querySelector('modal');
+
+form.addEventListener('submit', function(event) {
+  const agreeCheckbox = document.querySelector('#agree');
+
+  if (!agreeCheckbox.checked) {
+    alert('You must agree to the terms and conditions');
+    event.preventDefault();
+  }
+});
+
+
+</script>
 </body>
 </html>

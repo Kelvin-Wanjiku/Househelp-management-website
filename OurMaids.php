@@ -3,9 +3,9 @@
       $email = $_SESSION["email"];
       $query = "SELECT services FROM client WHERE email = '$email'";
       $query = "SELECT services FROM client WHERE email = '$email'";
-      $services_query = mysqli_query($conn, $query);
-      while($row = mysqli_fetch_array($services_query)){
-         $services = $row[0];
+      $service_query = mysqli_query($conn, $query);
+      while($row = mysqli_fetch_array($service_query)){
+         $service = $row[0];
       };
       
       $query = "SELECT * FROM worker WHERE  skills = '$services' ";
@@ -58,7 +58,7 @@
       <div class="main-content">
          <div class="header"><h2>Homly website</h2> <p><i> your one-stop solution for finding reliable and trustworthy househelp services.</i></p>   </div>
          <?php
-            echo "<table border = '1px'>";
+            echo "<table border = '5px'>";
             while($row= mysqli_fetch_array($results)){
                $worker_id = $row[0];
                $first_name = $row[1];
