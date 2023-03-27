@@ -1,11 +1,16 @@
 <?php
    require 'config.php';
-   $worker_id = $_SESSION['id'];
+   $worker_id = $_GET['worker_id'];
    $client_id = $_GET['client_id'];
 
+   echo
+   "<script> alert('TODO: NEED TO IMPLEMENT EXCHANGE OF INFORMATION e.g client f_name='$client_id', worker f_name='$worker_id'); </script>";
+
    // $query = "UPDATE booking SET accepted='"/$_POST[1]"' WHERE  "
+   $prev = 0;
    $bool_ = 1;
-   $query = "UPDATE `booking` SET `accepted`='[$bool_]' WHERE worker_id='$worker_id' AND client_id='$client_id'";
+   $query = "UPDATE booking SET accepted = REPLACE(accepted, '$prev', '$bool_')  WHERE worker_id='$worker_id' AND client_id='$client_id'";
+   // $query = "UPDATE `booking` SET `accepted`='[$bool_]' WHERE worker_id='$worker_id' AND client_id='$client_id'";
    mysqli_query($conn, $query);
 
    $query = "SELECT * FROM worker WHERE worker_id = '$worker_id' ";

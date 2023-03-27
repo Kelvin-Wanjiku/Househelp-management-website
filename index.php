@@ -16,8 +16,11 @@
       if($_SESSION["login"]){
          $query = "SELECT first_name FROM worker WHERE email = '$email'";
          $result = mysqli_query($conn, $query);
-         $name = mysqli_fetch_array($result);
-         $home_msg = "Welcome ";
+         while ($row = $result->fetch_assoc()) {
+            $name= $row[0];
+         }
+         // $name = mysqli_fetch_array($result);
+         $home_msg = "Welcome";
       }
       else{
          $home_msg = "Homly website";

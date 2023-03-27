@@ -19,21 +19,26 @@ if(isset($_POST["submit"])){
    }
    else{
       if($password == $confirmPassword){
-         $query = "INSERT INTO user_login VALUES('', '$email','$password', 'w')";
-         mysqli_query($conn, $query);
-         $query = "INSERT INTO worker VALUES('', '$firstName', '$middleName', '$surname', '$email', '$phoneNo', '$skills', '$location', '$experience', '$gender')";
-         mysqli_query($conn, $query);
-         
-         echo
-         "<script> alert('registration is successful'); </script>";
-         $_SESSION["login"] = true;
-         $query = "SELECT id FROM user_login WHERE email='$email'";
-         $u_id = mysqli_query($conn, $query);
-         $_SESSION["id"]= $u_id;
-         $_SESSION["email"] = $email;
-         $_SESSION["usertype"]='w';
-         
-         header("Location: index.php");
+
+        $query = "INSERT INTO user_login VALUES('', '$email','$password', 'w')";
+        mysqli_query($conn, $query);
+        $query = "INSERT INTO worker VALUES('', '$firstName', '$middleName', '$surname', '$email', '$phoneNo', '$skills', '$location', '$experience', '$gender')";
+        mysqli_query($conn, $query);
+
+        echo
+        "<script> alert('registration is successful'); </script>";
+        $_SESSION["login"] = true;
+        $query = "SELECT id FROM user_login WHERE email='$email'";
+        $u_id = mysqli_query($conn, $query);
+
+        while ($row = $u_id->fetch_assoc()) {
+          $_SESSION["id"]= $row;
+        }         
+
+        $_SESSION["email"] = $email;
+        $_SESSION["usertype"]='w';
+
+        header("Location: index.php");
       }
       else{
          echo
@@ -135,7 +140,7 @@ button[type="reset"]:hover {
    <label for="phoneNo">Phone number:</label>
    <input type="phoneNo" id="email" name="phoneNo" required><br><br>
 
-   <label for="skills">skills needed:</label>
+   <label for="skills">Skills offered:</label>
 		<select id="skills" name="skills"  required>
 			
 			<option name="skills" value="h">househelp</option>
@@ -164,6 +169,8 @@ button[type="reset"]:hover {
    <label for="female">Female</label>
    <input type="radio" id="other" name="gender" value="o" required>
    <label for="other">Other</label><br><br>
+   <input type="checkbox" required>
+   <label for= "terms"><a href="workerTerms.php">I agree to terms & conditions</a> </label> <br><br> 
 
   
 

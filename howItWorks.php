@@ -1,4 +1,18 @@
-<?php>
+<?php
+ require 'config.php';
+ if(isset($_SESSION["usertype"])){
+    $email = $_SESSION["email"];
+    if($_SESSION["usertype"]== 'c'){
+       $_link="./OurMaids.php";
+    }
+    elseif($_SESSION["usertype"]== 'w'){
+       $_link="./profile.php";
+    }
+ }
+ else{
+    $_link ="login.php";
+ }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +30,7 @@
          <br> <br>
          <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="./OurMaids.php"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
+            <li><a href="<?php echo $_link; ?>"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
             
             <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 

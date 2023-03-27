@@ -1,16 +1,28 @@
 <?php 
    require 'config.php';
+   if(isset($_SESSION["usertype"])){
       $email = $_SESSION["email"];
-      $query = "SELECT services FROM client WHERE email = '$email'";
-      $query = "SELECT services FROM client WHERE email = '$email'";
-      $service_query = mysqli_query($conn, $query);
-      while($row = mysqli_fetch_array($service_query)){
-         $service = $row[0];
-      };
-      
-      $query = "SELECT * FROM worker WHERE  skills = '$services' ";
-      $results = mysqli_query($conn, $query);
+      if($_SESSION["usertype"]== 'c'){
+         $_link="./OurMaids.php";
+      }
+      elseif($_SESSION["usertype"]== 'w'){
+         $_link="./profile.php";
+      }
+   }
+   else{
+      $_link ="login.php";
+   }
+
+   $email = $_SESSION["email"];
+   $query = "SELECT services FROM client WHERE email = '$email'";
+   $service_query = mysqli_query($conn, $query);
+   while($row = mysqli_fetch_array($service_query)){
+      $service = $row[0];
+   };
    
+   $query = "SELECT * FROM worker WHERE  skills = '$service' ";
+   $results = mysqli_query($conn, $query);
+
 
 ?>
 <!DOCTYPE html>
@@ -30,7 +42,7 @@
          <br> <br>
          <ul>
             <li><a href="./index.php">Home</a></li>
-            <li><a href="./OurMaids.php"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
+            <li><a href="<?php echo $_link;?>"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
             
             <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 

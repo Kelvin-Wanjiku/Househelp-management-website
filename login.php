@@ -9,7 +9,12 @@ if(isset($_POST["login"])){
       if($password== $row["password"]){
          // if (!isset($_SESSION['login'])){
          $_SESSION["login"] = true;
-         $_SESSION["id"]= $row["id"];
+ 
+         while ($row1 = $result->fetch_assoc()) {
+            $_SESSION["id"]= $row1["id"];
+         }         
+ 
+      //   $_SESSION["id"]= $row["id"];
          $_SESSION["email"] = $email;
          $_SESSION["usertype"]=$row["usertype"];
          

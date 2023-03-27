@@ -1,11 +1,27 @@
 <?php 
 require 'config.php';
 
+if(isset($_SESSION["usertype"])){
+   if($_SESSION["usertype"]== 'c'){
+      $_link="./OurMaids.php";
+   }
+   elseif($_SESSION["usertype"]== 'w'){
+      $_link="./profile.php";
+   }
+}
+else{
+   $_link ="login.php";
+}
+
 $email = $_SESSION["email"];
-$w_id = $_SESSION["id"];
+$query = "SELECT * FROM worker WHERE  email= '$email'";
+$result_id = mysqli_query($conn, $query);
+while ($row = $result_id->fetch_assoc()) {
+   $worker_id = $row['worker_id'];
+}
 $query = "SELECT * FROM worker WHERE  email= '$email'";
 $results = mysqli_query($conn, $query);
-$query = "SELECT * FROM booking WHERE  worker_id= '$w_id'";
+$query = "SELECT * FROM booking WHERE  worker_id= '$worker_id'";
 $bidding_result = mysqli_query($conn, $query);
 ?>
 <!DOCTYPE html>
@@ -25,14 +41,14 @@ $bidding_result = mysqli_query($conn, $query);
          <br> <br>
          <ul>
             <li><a href="./index.php">Home</a></li>
-            <li><a href="./OurMaids.php"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
+            <li><a href="<?php echo $_link; ?>"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
             
             <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
             <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
            
             <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
-            <li> <a href="#">Rate Us</a></li>
+            <li> <a href="rate.php">Rate Us</a></li>
          </ul>
          <br>
          <div class="reachOut">
@@ -111,7 +127,7 @@ $bidding_result = mysqli_query($conn, $query);
             echo "<td> {$surname} </td>"; 
             echo "<td> {$service} </td>"; 
             echo "<td> {$location} </td>"; 
-            echo "<td> <a href = 'accept.php?client_id=$client_id'> ACCEPT </a> </td>";
+            echo "<td> <a href = 'accept.php?client_id=$client_id&worker_id=$worker_id'> ACCEPT </a> </td>";
 
             echo "</tr>";
          }
