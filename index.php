@@ -17,7 +17,7 @@
          $query = "SELECT first_name FROM worker WHERE email = '$email'";
          $result = mysqli_query($conn, $query);
          while ($row = $result->fetch_assoc()) {
-            $name= $row[0];
+            $name= $row;
          }
          // $name = mysqli_fetch_array($result);
          $home_msg = "Welcome";

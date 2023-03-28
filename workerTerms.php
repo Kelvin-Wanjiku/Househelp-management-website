@@ -60,26 +60,30 @@ a:hover {
 <body>
    
       
-        <div class="main-content">
-           <div class="header"><h2>Homly website terms and conditions </h2> <p><i> By using the Househelp System website, you agree to be bound by these Terms and Conditions. Please read them carefully before using the website.</i></p>   </div>
+ <div class="main-content">
+    <div class="header"><h2>Homly website terms and conditions for all employees</h2> <p><i> By using the Househelp System website, you agree to be bound by these Terms and Conditions. Please read them carefully before using the website.</i></p>  
+    </div> 
            
-  <h2>1. Househelp Services</h2>
-  <p>The Househelp System is a platform that allows clients to find and hire househelps for their household needs. The househelps are not employed by the Househelp System and the Househelp System is not responsible for any acts or omissions of the househelps.</p>
-  <h2>2. Client Responsibility</h2>
-  <p>Clients are responsible for verifying the identity, qualifications, and background of any househelps they hire through the Househelp System. Clients must also ensure that the househelps comply with any legal or regulatory requirements for employment.</p>
-  <h2>3. Househelp Responsibilities</h2>
-  <p>Househelps are responsible for providing the services that they have been hired to perform in a professional and competent manner. Househelps must also comply with any legal or regulatory requirements for employment.</p>
-  <h2>4. Disclaimers</h2>
-  <p>The Househelp System does not guarantee the quality, suitability, or reliability of any househelps hired through the platform. The Househelp System is not liable for any damages, losses, or injuries that may arise from the use of the platform.</p>
-  <h2>5. Indemnification</h2>
-  <p>Clients agree to indemnify and hold harmless the Househelp System and its affiliates, officers, directors, employees, and agents from any claims, damages, or losses arising from their use of the platform.</p>
-  <h2>6. Governing Law</h2>
-  <p>These Terms and Conditions are governed by the laws of the jurisdiction in which the Househelp System is located.</p>
-  <h2>7. Changes to Terms and Conditions</h2>
-  <p>The Househelp System may update these Terms and Conditions at any time. Clients are responsible for checking the website for any updates.</p>
+    <h2>1. Contracts</h2>
+    <p> Employers must provide written employment contracts to househelps, outlining the terms and conditions of their employment, including job description, pay, working hours, leave entitlements, and other important details.The employees will have a similar copy which entails all the necessary rules and employee privileges</p>
+    <p></p>
+    <h2>2. Minimum wage:  </h2>
+    <p>Househelps are entitled to a minimum wage that is set by the government, and the website will ensure that they are paid according to the contract set during the final booking process</p>
+    <h2>3. Househelp Responsibilities</h2>
+    <p>Househelps are responsible for providing the services that they have been hired for as stated in the contract and to perform in a professional and competent manner.</p>
+    <h2>4. Health and safety:</h2>
+    <p>Employees must be provided with a safe working environment, including appropriate safety equipment, as well as addressing any hazards in the workplace..</p>
+    <h2>5.Termination of employment: </h2>
+    <p> Employees must follow the appropriate legal procedures when terminating their contracts especially before maturity, including providing notice to both the client and website admins or supervisors given during contract creation.
+    <br> Reasons should also be provided.
+    </p>
+    <h2>NB: </h2>
+    <p>  Failure to adhere to these laws will subject one to legal action and penalties.<br>
+ This website does not condone any illegal or unethical behavior by employers towards their domestic workers or vise verse. 
+ Any violation of labor laws will not be tolerated and may result in the immediate termination of the employee's account on this website.</p>
+   
  
-               
-        </div>
+ </div>
       
          
    

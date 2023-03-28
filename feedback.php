@@ -150,8 +150,15 @@ p{
       <textarea id="content" name="content" rows="5" cols="40" required></textarea><br>
 
       <button type="submit" name= "submit" value="Submit"> Submit</button>
+      <br><br>
+      <div class="whatsapp">
+         For further feedback or complaints reach us via whatsapp.
+        <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
+
+      </div>
          
       </div>
+
    </div>
    
 </body>

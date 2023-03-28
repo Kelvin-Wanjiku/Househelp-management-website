@@ -61,22 +61,33 @@ a:hover {
    
       
         <div class="main-content">
-           <div class="header"><h2>Homly website terms and conditions </h2> <p><i> By using the Househelp System website, you agree to be bound by these Terms and Conditions. Please read them carefully before using the website.</i></p>   </div>
+           <div class="header"><h2>Homly website terms and conditions </h2>
+            <p><i> By using the Househelp System website, you agree to be bound by these Terms and Conditions. Please read them carefully before using the website.</i></p>   </div>
            
-  <h2>1. Househelp Services</h2>
-  <p>The Househelp System is a platform that allows clients to find and hire househelps for their household needs. The househelps are not employed by the Househelp System and the Househelp System is not responsible for any acts or omissions of the househelps.</p>
-  <h2>2. Client Responsibility</h2>
-  <p>Clients are responsible for verifying the identity, qualifications, and background of any househelps they hire through the Househelp System. Clients must also ensure that the househelps comply with any legal or regulatory requirements for employment.</p>
-  <h2>3. Househelp Responsibilities</h2>
-  <p>Househelps are responsible for providing the services that they have been hired to perform in a professional and competent manner. Househelps must also comply with any legal or regulatory requirements for employment.</p>
-  <h2>4. Disclaimers</h2>
-  <p>The Househelp System does not guarantee the quality, suitability, or reliability of any househelps hired through the platform. The Househelp System is not liable for any damages, losses, or injuries that may arise from the use of the platform.</p>
-  <h2>5. Indemnification</h2>
-  <p>Clients agree to indemnify and hold harmless the Househelp System and its affiliates, officers, directors, employees, and agents from any claims, damages, or losses arising from their use of the platform.</p>
-  <h2>6. Governing Law</h2>
-  <p>These Terms and Conditions are governed by the laws of the jurisdiction in which the Househelp System is located.</p>
-  <h2>7. Changes to Terms and Conditions</h2>
-  <p>The Househelp System may update these Terms and Conditions at any time. Clients are responsible for checking the website for any updates.</p>
+  <h2>Client terms and conditions</h2>
+</p>
+<ol>
+  <li><h2>1. Contracts:</h2>
+     All employers will be sent an email with all the labour laws, terms and conditions, job description of their desired employees and are expected to adhere to these rules accordingly.</li>
+  <li><h2>2. Labor laws</h2>
+   Homly webite ensures that labour laws have been adhered to according to the Kenyan consitution.Such labour laws include:
+    minimum wage, working hours as per the government policy </li>
+  <li><h2>3. Health and safety:</h2>
+     Employers are required to provide a safe working environment for their employees. This includes providing appropriate safety equipment, as well as addressing any hazards in the workplace.</li>
+  <li><h2>4. Discrimination and harassment:</h2>
+    <br> Discrimination based on gender, age, ethnicity, religion, or other factors is illegal in Kenya. Employers must take steps to prevent harassment and discrimination in the workplace.</li>
+  
+  <li> <h2>5. Leave entitlements:</h2>
+    <br> Employees in Kenya are entitled to leaves during a point in their contract, which includes annual leave, sick leave, and maternity leave. The number of leave days varies based on the length of service as will be stated in the contract.</li>
+  <li></li>
+  <li> <h2> 6. Termination of employment:</h2>
+    <p> Employers must follow the appropriate legal procedures when terminating an employee's employment, including providing notice or pay in lieu of notice.They must also inform the Homly admins of the planned termination earlier.</p></li>
+</ol>
+ <h2> NB:</h2>  Failure to adhere to these laws will subject one to legal action and penalties.<br>
+ This website does not condone any illegal or unethical behavior by employers towards their domestic workers. 
+ Any violation of labor laws will not be tolerated and may result in the immediate termination of the employer's account on this website.
+ We urge all employers to treat their domestic workers with respect and dignity and to adhere to all the applicable labor laws.
+</p>
  
                
         </div>

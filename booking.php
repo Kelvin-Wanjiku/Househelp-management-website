@@ -15,6 +15,7 @@
       
       echo
       "<script> alert('This booking has already been made'); </script>";
+     
    }
 
    else{
@@ -22,7 +23,10 @@
       mysqli_query($conn, $query); 
       echo
       "<script> alert('Successfully made the booking! We will reach out via email to seal the hiring.'); </script>";
+     
    }
-   header("Location: OurMaids.php");
+
+    header("Location: OurMaids.php");
+  
 
 ?>
